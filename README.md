@@ -1,66 +1,20 @@
-## Foundry
+# 题目
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+编写 IDO 合约，实现 Token 预售，需要实现如下功能：
 
-Foundry consists of:
+1. 开启预售: 支持对给定的任意ERC20开启预售，设定预售价格，募集ETH目标，超募上限，预售时长。
+2. 任意用户可支付ETH参与预售；
+3. 预售结束后，如果没有达到募集目标，则用户可领会退款；
+4. 预售成功，用户可领取 Token，且项目方可提现募集的ETH；
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+**提交要求**
 
-## Documentation
+1. 编写 IDO 合约 和对应的测试合约
+2. 截图 foundry test 测试执行结果
+3. 提供 github IDO合约源码链接
 
-https://book.getfoundry.sh/
 
-## Usage
 
-### Build
+# 运行结果
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+![image-20240514155211321](README.assets/image-20240514155211321.png)
